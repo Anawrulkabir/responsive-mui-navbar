@@ -1,33 +1,8 @@
 import * as React from 'react'
-import AspectRatio from '@mui/joy/AspectRatio'
-import Box from '@mui/joy/Box'
 import Drawer from '@mui/joy/Drawer'
-import Button from '@mui/joy/Button'
-import Card from '@mui/joy/Card'
-import CardContent from '@mui/joy/CardContent'
-import Checkbox from '@mui/joy/Checkbox'
-import DialogTitle from '@mui/joy/DialogTitle'
 import DialogContent from '@mui/joy/DialogContent'
 import ModalClose from '@mui/joy/ModalClose'
-import Divider from '@mui/joy/Divider'
-import FormControl from '@mui/joy/FormControl'
-import FormLabel from '@mui/joy/FormLabel'
-import FormHelperText from '@mui/joy/FormHelperText'
-import List from '@mui/joy/List'
-import ListItem from '@mui/joy/ListItem'
-import Stack from '@mui/joy/Stack'
-import RadioGroup from '@mui/joy/RadioGroup'
-import Radio from '@mui/joy/Radio'
 import Sheet from '@mui/joy/Sheet'
-import Switch from '@mui/joy/Switch'
-import Typography from '@mui/joy/Typography'
-import TuneIcon from '@mui/icons-material/TuneRounded'
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
-import ApartmentRoundedIcon from '@mui/icons-material/ApartmentRounded'
-import MeetingRoomRoundedIcon from '@mui/icons-material/MeetingRoomRounded'
-import HotelRoundedIcon from '@mui/icons-material/HotelRounded'
-import Done from '@mui/icons-material/Done'
-import Image from 'next/image'
 import { HiOutlineMenuAlt2 } from 'react-icons/hi'
 import { HiOutlineUser } from 'react-icons/hi2'
 import VerifiedIcon from '@mui/icons-material/Verified'
@@ -78,24 +53,24 @@ export default function MobileNav() {
           }}
           className="bg-white"
         >
-          {/* <DialogTitle>Filters</DialogTitle> */}
           <ModalClose />
           <div className="">
-            <div className="text-4xl font-medium flex flex-col justify-center gap-8 mt-24  mx-8 gradiant">
-              <div>Home</div>
-              <div>Services</div>
-              <div>Team</div>
-              <div>Deals</div>
-              <div>Blog</div>
-              {/* <div className=" rounded-md bg-gradient-to-r from-[#5D03FF] via-[#5D03FF] to-[#5D03FF] p-0.5">
-                <div className="flex h-full w-full items-center justify-center from-[#3B0995] via-[#3B0995] to-[#6B20F2]">
-                  <h1 className="text-md text-white ms-1">Validate</h1>
-                  <VerifiedIcon
-                    sx={{ fontSize: 'midium', fontWeight: 'semibold' }}
-                    className=" p-1 text-white"
-                  />
-                </div>
-              </div> */}
+            <div className="text-4xl font-medium flex flex-col justify-center gap-8 mt-24  mx-8 ">
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600">
+                Home
+              </div>
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600">
+                Services
+              </div>
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600">
+                Team
+              </div>
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600">
+                Deals
+              </div>
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600">
+                Blog
+              </div>
             </div>
             <div className="w-2/3 rounded-md bg-gradient-to-r from-[#5D03FF] via-[#5D03FF] to-[#5D03FF] px-1 py-3 mt-8 mx-8 text-xl font-semibold">
               <div className="flex h-full  items-center justify-center from-[#3B0995] via-[#3B0995] to-[#6B20F2]">
@@ -108,7 +83,6 @@ export default function MobileNav() {
             </div>
           </div>
 
-          {/* <Divider sx={{ mt: 'auto' }} /> */}
           <DialogContent sx={{ gap: 2 }}>
             {/* <FormControl>
               <RadioGroup
@@ -275,26 +249,6 @@ export default function MobileNav() {
               <Switch />
             </FormControl> */}
           </DialogContent>
-
-          {/* <Divider sx={{ mt: 'auto' }} /> */}
-          {/* <Stack
-            direction="row"
-            useFlexGap
-            spacing={1}
-            sx={{ justifyContent: 'space-between' }}
-          >
-            <Button
-              variant="outlined"
-              color="neutral"
-              onClick={() => {
-                setType('')
-                setAmenities([])
-              }}
-            >
-              Clear
-            </Button>
-            <Button onClick={() => setOpen(false)}>Show 165 properties</Button>
-          </Stack> */}
         </Sheet>
       </Drawer>
     </div>
