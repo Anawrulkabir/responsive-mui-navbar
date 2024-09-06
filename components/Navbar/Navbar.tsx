@@ -1,6 +1,6 @@
 'use client'
-
-// import assets from '@/assets' // don't have the assets
+// TASK : don't have the assets access , Uncomment while you test with real projects
+// import assets from '@/assets'
 import {
   Box,
   Button,
@@ -18,6 +18,7 @@ import dynamic from 'next/dynamic'
 import React, { useEffect, useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
 import { useMediaQuery, useTheme } from '@mui/material'
+// TASK : import these two line below services when you have them
 // import { getUserInfo, isLoggedIn, removeUser } from '@/services/auth.services'
 // import { logout } from '@/services/actions/logout'
 import { useRouter } from 'next/navigation'
@@ -43,6 +44,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => window.addEventListener('scroll', controlNavbar), [])
 
+  // TASK : Uncomment this code when you have the auth services
   // useEffect(() => {
   //   const fetchUserInfo = async () => {
   //     const user = await getUserInfo()
@@ -61,6 +63,7 @@ const Navbar: React.FC = () => {
     setAnchorEl(null)
   }
 
+  // TASK : Uncomment this code when you have the auth services
   // const handleLogOut = async () => {
   //   removeUser()
   //   await logout()
@@ -90,7 +93,8 @@ const Navbar: React.FC = () => {
               }}
             >
               <Image
-                // src={assets.images.logo} // I dont have any access of assets right now
+                // TASK : I dont have any access of assets right now, Uncomment while you test with real projects & comment the line below it { src={'/favicon.ico'} }
+                // src={assets.images.logo}
                 src={'/favicon.ico'}
                 width={50}
                 height={30}
