@@ -99,8 +99,11 @@ const Navbar: React.FC = () => {
                 width={50}
                 height={30}
                 alt="logo"
+                className="hidden md:flex"
               />
-              <h1 className="text-2xl ms-1 text-white">BeyondOTC</h1>
+              <h1 className="text-2xl ms-1 text-white hidden md:flex">
+                BeyondOTC
+              </h1>
             </Box>
           </Grid>
 
@@ -180,7 +183,9 @@ const Navbar: React.FC = () => {
             //     </MenuItem>
             //   </Menu>
             // </Grid>
-            <MobileNav />
+            <div className="md:hidden w-full mx-2">
+              <MobileNav />
+            </div>
           ) : (
             <Grid
               item

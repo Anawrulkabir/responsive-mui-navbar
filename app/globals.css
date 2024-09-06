@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #060418;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #060418;
     --foreground: #ededed;
   }
 }
@@ -39,12 +39,12 @@ body {
   display: none;
 }
 /* Target the specific component's typography class */
-.MuiStack-root::before,
+/* .MuiStack-root::before,
 .css-1d9cypr-MuiStack-root::before {
-  content: 'BeyondOTC'; /* Your new text */
-  font-size: inherit; /* Ensure the font size matches */
-  /* Inherit the color */
-}
+  content: 'BeyondOTC'; 
+  font-size: inherit;
+
+} */
 /* Changing the theme icon with user icon */
 /* .MuiButtonBase-root .MuiSvgIcon-root {
   display: none; 
@@ -84,4 +84,15 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text; /* For non-WebKit browsers */
   color: transparent; /* Fallback for older browsers */
+}
+
+/* text linear gradiant */
+.gradiant > div {
+  background: linear-gradient(
+    45deg,
+    rgba(226, 46, 173, 1) 35%,
+    rgba(218, 120, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
