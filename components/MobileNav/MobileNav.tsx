@@ -70,7 +70,6 @@ export default function MobileNav(props: DemoProps) {
         {
           segment: 'home-page',
           title: 'Home',
-          //   icon: <DescriptionIcon />,
         },
         {
           segment: 'services-page',

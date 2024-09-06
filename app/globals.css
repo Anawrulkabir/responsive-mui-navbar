@@ -26,16 +26,62 @@ body {
   }
 }
 
+.css-1qsfemz svg {
+  display: none;
+  visibility: hidden;
+}
+/* .MuiTypography-root, */
+/* .MuiTypography-h6, */
+.css-1vdl86r-MuiTypography-root {
+  display: none;
+}
+.css-1qsfemz {
+  display: none;
+}
 /* Target the specific component's typography class */
 .MuiStack-root::before,
 .css-1d9cypr-MuiStack-root::before {
   content: 'BeyondOTC'; /* Your new text */
   font-size: inherit; /* Ensure the font size matches */
-  color: white; /* Inherit the color */
-  background-color: aquamarine;
+  /* Inherit the color */
+}
+/* Changing the theme icon with user icon */
+/* .MuiButtonBase-root .MuiSvgIcon-root {
+  display: none; 
+} */
+/* .MuiSvgIcon-root,
+.MuiSvgIcon-fontSizeMedium,
+.css-49adnf-MuiSvgIcon-root,
+.css-1ftsn1g-MuiSvgIcon-root {
+  display: none;
+} */
+
+/* .MuiButtonBase-root::before {
+  content: url('data:image/svg+xml;base64,YOUR_BASE64_ENCODED_ICON');
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
-/* .MuiStack-root,
-.css-1d9cypr-MuiStack-root {
-  visibility: hidden;
+.MuiButtonBase-root {
+  display: none;
 } */
+
+.css-zva7in {
+  position: relative;
+  z-index: 1000;
+}
+
+.MuiListItem-root span {
+  font-size: xx-large;
+  font-weight: 900;
+  background: linear-gradient(
+    45deg,
+    rgba(226, 46, 173, 1) 35%,
+    rgba(218, 120, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For non-WebKit browsers */
+  color: transparent; /* Fallback for older browsers */
+}
