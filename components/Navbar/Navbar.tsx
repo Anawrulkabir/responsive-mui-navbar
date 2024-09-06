@@ -1,6 +1,6 @@
 'use client'
 
-import assets from '@/assets'
+// import assets from '@/assets' // don't have the assets
 import {
   Box,
   Button,
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               }}
             >
               <Image
-                // src={assets.images.logo}
+                // src={assets.images.logo} // I dont have any access of assets right now
                 src={'/favicon.ico'}
                 width={50}
                 height={30}
