@@ -43,15 +43,15 @@ const Navbar: React.FC = () => {
 
   useEffect(() => window.addEventListener('scroll', controlNavbar), [])
 
-  useEffect(() => {
-    const fetchUserInfo = async () => {
-      const user = await getUserInfo()
-      setUserInfo(user)
-      router.refresh()
-    }
+  // useEffect(() => {
+  //   const fetchUserInfo = async () => {
+  //     const user = await getUserInfo()
+  //     setUserInfo(user)
+  //     router.refresh()
+  //   }
 
-    fetchUserInfo()
-  }, [])
+  //   fetchUserInfo()
+  // }, [])
 
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
@@ -61,12 +61,12 @@ const Navbar: React.FC = () => {
     setAnchorEl(null)
   }
 
-  const handleLogOut = async () => {
-    removeUser()
-    await logout()
-    setUserInfo(null)
-    router.refresh()
-  }
+  // const handleLogOut = async () => {
+  //   removeUser()
+  //   await logout()
+  //   setUserInfo(null)
+  //   router.refresh()
+  // }
 
   return (
     <div
