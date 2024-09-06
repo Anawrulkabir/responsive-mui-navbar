@@ -25,3 +25,17 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Target the specific component's typography class */
+.MuiStack-root::before,
+.css-1d9cypr-MuiStack-root::before {
+  content: 'BeyondOTC'; /* Your new text */
+  font-size: inherit; /* Ensure the font size matches */
+  color: white; /* Inherit the color */
+  background-color: aquamarine;
+}
+
+/* .MuiStack-root,
+.css-1d9cypr-MuiStack-root {
+  visibility: hidden;
+} */
